@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Brand palette: #DCC3A1 (warm sand) + #0F172A (deep navy) */
+    --background: 36 44% 94%;          /* soft sand tint */
+    --foreground: 222 47% 11%;         /* #0F172A */
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 222 47% 11%;            /* #0F172A */
+    --primary-foreground: 33 44% 75%;  /* #DCC3A1 */
+
+    --secondary: 33 44% 75%;           /* #DCC3A1 */
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 33 30% 88%;
+    --muted-foreground: 222 20% 35%;
+
+    --accent: 33 44% 75%;              /* #DCC3A1 */
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 72% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 33 25% 80%;
+    --input: 33 25% 80%;
+    --ring: 222 47% 11%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222 47% 11%;         /* #0F172A */
+    --foreground: 33 44% 85%;          /* lighter sand */
+
+    --card: 222 47% 14%;
+    --card-foreground: 33 44% 85%;
+
+    --popover: 222 47% 14%;
+    --popover-foreground: 33 44% 85%;
+
+    --primary: 33 44% 75%;             /* #DCC3A1 */
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 222 40% 18%;
+    --secondary-foreground: 33 44% 85%;
+
+    --muted: 222 30% 20%;
+    --muted-foreground: 33 20% 70%;
+
+    --accent: 33 44% 75%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 222 30% 22%;
+    --input: 222 30% 22%;
+    --ring: 33 44% 75%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
